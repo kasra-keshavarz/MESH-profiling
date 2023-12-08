@@ -7458,7 +7458,7 @@ main {
 <li><code>netcdf/4.7.4</code>, and</li>
 <li><code>hdf5/1.10.0</code>.</li>
 </ol>
-<p>Two versions of <code>MESH</code> has been compiled, namely <a href="https://github.com/MESH-Model/MESH-Dev/releases/tag/SA_MESH_1.4%2FSA_MESH_1.4.1773"><code>r1773</code></a> (commit <a href="https://github.com/MESH-Model/MESH-Dev/commit/75d48bdd0fe181cd891ee8edeab49c0eae3521e6">75d48bd</a>) and <a href="https://github.com/MESH-Model/MESH_Code"><code>r1860ME</code></a> (commit <a href="https://github.com/MESH-Model/MESH_Code/commit/52c73678ef604c32844926bb95a8dfe01ea88f82">52c7367</a>). Both have been profiled using Intel's <code>vtune/2020.1</code> profiler on DRA Graham.</p>
+<p>Two versions of <code>MESH</code> have been compiled, namely <a href="https://github.com/MESH-Model/MESH-Dev/releases/tag/SA_MESH_1.4%2FSA_MESH_1.4.1773"><code>r1773</code></a> (commit <a href="https://github.com/MESH-Model/MESH-Dev/commit/75d48bdd0fe181cd891ee8edeab49c0eae3521e6">75d48bd</a>) and <a href="https://github.com/MESH-Model/MESH_Code"><code>r1860ME</code></a> (commit <a href="https://github.com/MESH-Model/MESH_Code/commit/52c73678ef604c32844926bb95a8dfe01ea88f82">52c7367</a>). Both have been profiled using Intel's <code>vtune/2020.1</code> profiler on DRA Graham.</p>
 </div>
 </div>
 </div>
@@ -7614,7 +7614,7 @@ Segmentation fault</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Now, lets check the bottlenecks of <code>MESH</code> <code>r1860ME</code> version and its differences with <code>r1773</code>. Only 1 year of the <code>Fraser River Basin</code> setup was run in serial mode by each version.</p>
+<p>Now, let's check the bottlenecks of <code>MESH</code> <code>r1860ME</code> version and its differences with <code>r1773</code>. Only 1 year of the <code>Fraser River Basin</code> setup was run in serial mode by each version.</p>
 </div>
 </div>
 </div>
@@ -7662,7 +7662,7 @@ r1860me used 05:37:05
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Determining functions that are called/available in <code>r1860ME</code> but not in <code>r1773</code> plus see how much time they have used the CPU:</p>
+<p>Determining functions that are called/available in <code>r1860ME</code> but not in <code>r1773</code> plus seeing how much time they have used the CPU:</p>
 </div>
 </div>
 </div>
@@ -7870,7 +7870,7 @@ variable_maps.f90
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>And, here is a list of top 10 common functions and their processing times in the two version:</p>
+<p>And, here is a list of top 10 common functions and their processing times in the two versions:</p>
 </div>
 </div>
 </div>
@@ -7985,7 +7985,7 @@ variable_maps.f90
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here, you can see the percentage of each module within <code>MESH</code> <code>r1773</code> taking over the total computation:</p>
+<p>Here, you can see the percentage (%) of each module within <code>MESH</code> <code>r1773</code> taking over the total computation:</p>
 </div>
 </div>
 </div>
@@ -8066,7 +8066,7 @@ Name: CPU Time: Total, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>It seems that the <code>I/O</code> processes are causing newer version to take more time to complete, and therefore, there is a difference in the computation time.</p>
+<p>It seems that the <code>I/O</code> processes are causing the newer version to take more time to complete, and therefore, there is a difference in the computation time.</p>
 </div>
 </div>
 </div>
@@ -8077,7 +8077,7 @@ Name: CPU Time: Total, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>There are many other details hidden in the profiling results, they could be shared with you. Let me know if you need to have access to them.</p>
+<p>There are many other details hidden in the profiling results and they could be shared with you. Let me know if you need to have access to them.</p>
 </div>
 </div>
 </div>
@@ -8088,7 +8088,7 @@ Name: CPU Time: Total, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Profiling results are done using <code>vtune/2020.1</code> on DRA Graham</p>
+<p>Profiling results are done using <code>vtune/2020.1</code> on DRA Graham.</p>
 </div>
 </div>
 </div>
